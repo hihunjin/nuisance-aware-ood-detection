@@ -1,0 +1,16 @@
+python main.py \
+--cosine 1 \
+--critic_epochs 2 \
+--data_label_correlation 0.7 \
+--epochs 30 \
+--in_dataset cmnist \
+--joint_indep 0 \
+--lr 0.0001 \
+--manualSeed 0 \
+--model_arch simple \
+--momentum 0.9 \
+--optimizer adam \
+--project_name cm_nurd \
+--reweight 1 \
+--reweight_epochs 30 \
+--weight_decay 0.005

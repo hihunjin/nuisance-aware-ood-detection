@@ -48,10 +48,10 @@ class ColoredMNIST(datasets.VisionDataset):
     self.data_label_correlation = args.data_label_correlation
     self.exact = args.exact
     self.split = split
+    self.deterministic_label = args.deterministic_label
     self.prepare_colored_mnist()
     if args.undersample:
       raise NotImplementedError("undersample not supported for cmnist")
-    self.deterministic_label = args.deterministic_label
 
   def __getitem__(self, index):
     """
